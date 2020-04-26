@@ -50,3 +50,8 @@
     border: 8px solid #1b75fc;
     border-radius: 8px;
 }
+
+.card{
+    height: 250px;
+    width: 350px;
+}

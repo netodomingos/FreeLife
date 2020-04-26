@@ -43,7 +43,7 @@
                 <a class="nav-link" href="#">Informativos</a>
               </li>
               <div>
-                  <hr style="height: 40px; width: 2px; background-color: #000; margin: 0 20px;"/>
+                  <hr class="d-none d-sm-block " style="height: 40px; width: 2px; background-color: #000; margin: 0 20px;"/>
               </div>
               <li class="nav-item active">
                 <a class="nav-link" href="#">Contato</a>
@@ -57,14 +57,14 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6 col-sm-12">
             <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 80vh; ">
                 <h5 class="display-4 " style="font-size: 30px; font-weight: bold;">Free Life - Saúde e Terapia</h5>
                 <p class="">Médicos e Terapeutas que entendem e cuidam de você.</p>
                 <button class="" style="width: 200px; height: 40px ; font-weight: bold; border-radius: 4px; background-color: #428DFF; border: none; color: #FFF ;cursor: pointer;">Conheça</button>
             </div>
           </div>
-          <div class="col-6" >
+          <div class="col-md-6  d-none d-sm-block  " >
             <div style="display: flex; justify-content: center; align-items: center; height: 90vh;">
               <img src="./undraw_medicine_b1ol (1).svg" alt="" style="width: 650px;">
             </div>
@@ -72,9 +72,9 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container d-none d-sm-block  ">
 
-        <h5 class="display-4 text-center" style="font-size: 30px;">Nossas Especialidades</h5>
+        <h5 class="display-4 text-center " style="font-size: 30px;">Nossas Especialidades</h5>
         <hr style="width: 400px;">
 
         <div class="row">
@@ -124,18 +124,18 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container d-none d-sm-block">
         <h5 class="display-4 text-center mt-5" style="font-size: 30px;">Nossa Equipe</h5>
         <hr style="width: 400px;">
 
 
         <div class="row">
-          <div class="col-md-6" >
+          <div class="col-md-6 " >
             <div style="display: flex; justify-content: center; align-items: center; height: 90vh;">
               <img src="./T.png" alt="" style="width: 650px;">
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 ">
             <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 80vh; ">
                 <h5 class="display-4 " style="font-size: 30px; font-weight: bold;">Nosso time de Profissionais</h5>
                 <p class="">Conheça nosso time de profissionais e parceiros!</p>
@@ -145,13 +145,15 @@
         </div>
       </div>
 
-      <div class="container">
-        <h5 class="display-4 text-center mt-5" style="font-size: 30px;">Nossa Estrutura</h5>
-        <hr style="width: 400px;">
+      <div class="container d-none d-sm-block">
+        <div class="">
+          <h5 class="display-4 text-center mt-5" style="font-size: 30px;">Nossa Estrutura</h5>
+          <hr style="width: 400px;">
+        </div>
 
 
         <div class="row">
-          <div class="col-md-6" >
+          <div class="col-md-6 d-none d-sm-block" >
             <div class="teste shadow">
               <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
@@ -235,63 +237,239 @@
 
       
       <div class="container">
-        <h5 class="display-4 text-center mt-5" style="font-size: 30px;">Nossos Preços</h5>
+        <h5 class="display-4 text-center mt-5" style="font-size: 30px; font-weight: 700;">Nossos Preços</h5>
+        <p class="lead text-center" style="font-size: 20px;">* Valores feitos aos nossos pacientes que perderam plano de saúde e indicações de pacientes.</p>
         <hr style="width: 400px;">
 
         <div class="card-deck mb-3 text-center">
-          <div class="card mb-4 shadow-sm">
+          <div class="card mb-4 shadow-sm" style="height: 250px; width: 350px;">
             <div class="card-header color">
               <h4 class="my-0 font-weight-normal">Acunpuntura</h4>
             </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">R$ 60,00</h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Pacote com 4 sessões R$ 200,00 </li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">Contate-nos</button>
+            <div class="card-body" style='display: flex; flex-direction: column; justify-content: space-between;'>
+              <div>
+                <h1 class="card-title pricing-card-title">R$ 60,00</h1>
+                <ul class="list-unstyled mt-3 mb-3">
+                  <li>Pacote com 4 sessões R$ 200,00 </li>
+                </ul>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Contate-nos</button>
+              </div>
             </div>
           </div>
-          <div class="card mb-4 shadow-sm">
+          <div class="card mb-4 shadow-sm" style="height: 250px;">
             <div class="card-header color">
               <h4 class="my-0 font-weight-normal">Bioimpedanciometria</h4>
             </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mês</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>20 usuários</li>
-                <li>10 GB de armazenamento</li>
-                <li>Suporte por email prioritário</li>
-                <li>Acesso ao centro de ajuda</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">Conhecer</button>
+            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h1 class="card-title pricing-card-title">R$ 80,00</h1>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary mt-1">Contate-nos</button>
+              </div>
             </div>
           </div>
-          <div class="card mb-4 shadow-sm">
+          <div class="card mb-4 shadow-sm" style="height: 250px;">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Premium</h4>
+              <h4 class="my-0 font-weight-normal">Biofeedback com EMG</h4>
             </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mês</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>30 usuários</li>
-                <li>15 GB de armazenamento</li>
-                <li>Suporte por email e telefone</li>
-                <li>Acesso ao centro de ajuda</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">Contate-nos</button>
+            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h1 class="card-title pricing-card-title">R$ 180,00</h1>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary mt-1">Contate-nos</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 shadow-sm" style="height: 250px;">
+            <div class="card-header color">
+              <h4 class="my-0 font-weight-normal">Cardio</h4>
+            </div>
+            <div class="card-body" style='display: flex; flex-direction: column; justify-content: space-between;'>
+              <div>
+                <h1 class="card-title pricing-card-title">R$ 500,00</h1>
+                <ul class="list-unstyled mt-3 mb-3">
+                  <li>R$ 300,00*</li>
+                </ul>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Contate-nos</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm" style="height: 250px;">
+            <div class="card-header color">
+              <h4 class="my-0 font-weight-normal">Cardio com Eletro</h4>
+            </div>
+            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h1 class="card-title pricing-card-title">R$ 550,00</h1>
+                <ul class="list-unstyled mt-3 mb-3">
+                  <li>R$ 325,00*</li>
+                </ul>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary mt-1">Contate-nos</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm" style="height: 250px;">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Clínica Médica</h4>
+            </div>
+            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h1 class="card-title pricing-card-title">R$ 500,00</h1>
+                <ul class="list-unstyled mt-3 mb-3">
+                  <li>R$ 300,00*</li>
+                </ul>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary mt-1">Contate-nos</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 shadow-sm" style="height: 250px;">
+            <div class="card-header color">
+              <h4 class="my-0 font-weight-normal">Eletro (ECG)</h4>
+            </div>
+            <div class="card-body" style='display: flex; flex-direction: column; justify-content: space-between;'>
+              <div>
+                <h1 class="card-title pricing-card-title">R$ 50,00</h1>
+                <ul class="list-unstyled mt-3 mb-3">
+                  <li>R$ 25,00*</li>
+                </ul>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Contate-nos</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm" style="height: 250px;">
+            <div class="card-header color">
+              <h4 class="my-0 font-weight-normal">Fisioterapia</h4>
+            </div>
+            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h1 class="card-title pricing-card-title">R$ 550,00</h1>
+                <ul class="list-unstyled mt-3 mb-3" style="font-size: 17px;">
+                  <li>10 sessões <strong>R$ 750,00</strong> | <strong>R$ 500,00*</strong></li>
+                  
+                </ul>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary mt-1">Contate-nos</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm" style="height: 250px;">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Nutrição</h4>
+            </div>
+            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h1 class="card-title pricing-card-title">R$ 150,00</h1>
+                <ul class="list-unstyled mt-3 mb-3">
+                  <li>R$ 100,00*</li>
+                </ul>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary mt-1">Contate-nos</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 shadow-sm" style="height: 250px;">
+            <div class="card-header color">
+              <h4 class="my-0 font-weight-normal">Psicologia</h4>
+            </div>
+            <div class="card-body" style='display: flex; flex-direction: column; justify-content: space-between;'>
+              <div>
+                <h1 class="card-title pricing-card-title" style="font-size: 28px;">R$ 150,00 - R$ 100,00</h1>
+                <ul class="list-unstyled mt-3 mb-3">
+                  <li>Pacote com 4 sessão R$ 250,00</li>
+                </ul>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Contate-nos</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm" style="height: 250px;">
+            <div class="card-header color">
+              <h4 class="my-0 font-weight-normal" style="font-size: 16px;">Reabiliatação Perineal com Biofeedback EMC:</h4>
+            </div>
+            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h1 class="card-title pricing-card-title">R$ 80,00</h1>
+                <ul class="list-unstyled mt-3 mb-3" style="font-size: 14px;">
+                  <li>Usado mais em Gestantes.</li>
+                </ul>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-block btn-primary mt-1">Contate-nos</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
 
-<!-- 
+
+      <div class="container">
+        <h5 class="display-4 text-center mt-5" style="font-size: 30px;">Nosso contato</h5>
+        <hr style="width: 400px;">
+
+
+        <div class="row">
+          <div class="col-md-6 d-none d-sm-block" >
+            <div style="display: flex; justify-content: center; align-items: center; height: 55vh;">
+              <img src="./contact.png" alt="" style="width: 700px;">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 80vh; ">
+              <div class="endereco">
+                <h5 class="display-4 " style="font-size: 20px; font-weight: bold;">Telefone e WhatsApp:</h5>
+                <p class="">+55 81 3125-0065</p>
+                <p class="">+55 81 3467-7483</p>
+                <h5 class="display-4 " style="font-size: 20px; font-weight: bold;">WhatsApp:</h5>
+                <p class="">+55 81 99241-1370</p>
+                <h5 class="display-4 " style="font-size: 20px; font-weight: bold;">Email:</h5>
+                <p class="">recepcaofreelifesaude@gmail.com</p>
+                <h5 class="display-4 " style="font-size: 20px; font-weight: bold;">Horário de Atendimento:</h5>
+                <p class="">07:00h - 12:00h e 13:00h - 18:00h Segunda à Sexta</p>
+                  <div class="endereco d-sm-block d-md-none">
+                    <p class="" style="font-size: 20px; font-weight: bold;">Endereço</h5>
+                    <p class="">Rua Doutor Raul Lafayette, 191 - Boa Viagem</p>
+                    <p>Próximo do Shopping Recife</p>
+                    <a href="https://www.google.com.br/maps/place/Rua+Dr.+Raul+Lafayette,+191+-+Boa+Viagem,+Recife+-+PE,+51021-220/@-8.1224365,-34.9032361,17z/data=!3m1!4b1!4m5!3m4!1s0x7ab1fb3d713d143:0x7b8ee37aa65591a1!8m2!3d-8.1224365!4d-34.9010474">
+                      <button class="" style="width: 200px; height: 40px ; font-weight: bold; border-radius: 4px; background-color: #428DFF; border: none; color: #FFF ;cursor: pointer;">Ver no Mapa</button>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <div class="bg-dark" style="margin-bottom: 0; position: relative; bottom: 0px;">
         <div class="p-3">
           <p class='text-center text-white'>Free Life Saude e Terapia, 2018 © Todos os Direitos Reservados</p>
           <p class="location text-center text-white">Rua Doutor Raul Lafayette - 191 - Boa Viagem</p>
         </div>
-      </div> -->
+      </div>
 
     
 
